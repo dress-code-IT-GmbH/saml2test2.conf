@@ -1,5 +1,5 @@
 # saml2test.conf
 
-Configuration for https://github.com/identinetics/saml2test[SAML2test2] test suite with samltest.fed-lab.org
+Configuration for https://github.com/identinetics/saml2test2[SAML2test2] test suite with samltest.fed-lab.org
 
 Used for testing the test harness and as a template for configuring other test targets
