@@ -1,0 +1,353 @@
+{
+ "ENTITY_ID": "https://testidp01.samltest.fed-lab.org/idp/shibboleth",
+ "_BASE": "http://webui.samltest.fed-lab.org:8087/",
+ "CONTENT_HANDLER_INTERACTION": [
+  {
+   "page-type": "login",
+   "matches": {
+    "title": "Web Login Service",
+    "url": "https://testidp01.samltest.fed-lab.org/idp/profile/SAML2/Redirect/SSO"
+   },
+   "control": {
+    "set": {
+     "_eventId_proceed": "",
+     "j_password": "test",
+     "j_username": "tester@testinetics.at"
+    },
+    "type": "form"
+   }
+  },
+  {
+   "page-type": "other",
+   "matches": {
+    "content": "you must press the Continue button",
+    "url": "https://testidp01.samltest.fed-lab.org/idp/profile/SAML2/Redirect/SSO"
+   },
+   "control": {
+    "set": {},
+    "index": 0,
+    "type": "form"
+   }
+  },
+  {
+   "page-type": "other",
+   "matches": {
+    "title": "Information Release",
+    "url": "https://testidp01.samltest.fed-lab.org/idp/profile/SAML2/Redirect/SSO"
+   },
+   "control": {
+    "set": {},
+    "submit": "_eventId_proceed",
+    "index": 0,
+    "type": "form"
+   }
+  }
+ ],
+ "CONTENT_HANDLER_TRIGGER": {
+  "IDP-AuthnRedirect-nid_unspecified": [
+   "https://testidp01.samltest.fed-lab.org/idp/profile/SAML2/Redirect/SSO"
+  ]
+ },
+ "FLOWS": [
+  "flows.yaml"
+ ],
+ "PORT": 8087,
+ "FLOWS_PROFILES": [
+  "saml2int"
+ ],
+ "CONFIG": {
+  "acs-post": {
+   "name_form": "urn:oasis:names:tc:SAML:2.0:attrname-format:uri",
+   "cert_file": "pki/mycert.pem",
+   "key_file": "pki/mykey.pem",
+   "service": {
+    "sp": {
+     "endpoints": {
+      "single_logout_service": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/slo",
+        "urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+       ]
+      ],
+      "discovery_response": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/disco",
+        "urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+       ]
+      ],
+      "assertion_consumer_service": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/acs/post",
+        "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+       ]
+      ]
+     }
+    }
+   },
+   "description": "Basic SP",
+   "entityid": "http://webui.samltest.fed-lab.org:8087/basic/sp.xml"
+  },
+  "acs-ecp": {
+   "name_form": "urn:oasis:names:tc:SAML:2.0:attrname-format:uri",
+   "cert_file": "pki/mycert.pem",
+   "key_file": "pki/mykey.pem",
+   "service": {
+    "sp": {
+     "endpoints": {
+      "single_logout_service": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/slo",
+        "urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+       ]
+      ],
+      "discovery_response": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/disco",
+        "urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+       ]
+      ],
+      "assertion_consumer_service": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/ecp",
+        "urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+       ]
+      ]
+     }
+    }
+   },
+   "description": "Basic SP",
+   "entityid": "http://webui.samltest.fed-lab.org:8087/basic/sp.xml"
+  },
+  "coco": {
+   "entity_category": [
+    "http://www.geant.net/uri/dataprotection-code-of-conduct/v1"
+   ],
+   "name_form": "urn:oasis:names:tc:SAML:2.0:attrname-format:uri",
+   "cert_file": "pki/mycert.pem",
+   "key_file": "pki/mykey.pem",
+   "service": {
+    "sp": {
+     "required_attributes": [
+      "eduPersonPrincipalName",
+      "eduPersonScopedAffiliation",
+      "mail"
+     ],
+     "name": "Code of Conduct SP",
+     "endpoints": {
+      "single_logout_service": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/slo",
+        "urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+       ]
+      ],
+      "discovery_response": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/disco",
+        "urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+       ]
+      ],
+      "assertion_consumer_service": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/acs/redirect",
+        "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+       ],
+       [
+        "http://webui.samltest.fed-lab.org:8087/acs/post",
+        "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+       ],
+       [
+        "http://webui.samltest.fed-lab.org:8087/acs/artifact",
+        "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+       ],
+       [
+        "http://webui.samltest.fed-lab.org:8087/ecp",
+        "urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+       ]
+      ]
+     },
+     "optional_attributes": [
+      "displayName",
+      "schacHomeOrganization"
+     ]
+    }
+   },
+   "entityid": "http://webui.samltest.fed-lab.org:8087/coco/sp.xml",
+   "description": "CoCo SP"
+  },
+  "acs-artifact": {
+   "name_form": "urn:oasis:names:tc:SAML:2.0:attrname-format:uri",
+   "cert_file": "pki/mycert.pem",
+   "key_file": "pki/mykey.pem",
+   "service": {
+    "sp": {
+     "endpoints": {
+      "single_logout_service": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/slo",
+        "urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+       ]
+      ],
+      "discovery_response": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/disco",
+        "urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+       ]
+      ],
+      "assertion_consumer_service": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/acs/artifact",
+        "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+       ]
+      ]
+     }
+    }
+   },
+   "description": "Basic SP",
+   "entityid": "http://webui.samltest.fed-lab.org:8087/basic/sp.xml"
+  },
+  "acs-redirect": {
+   "name_form": "urn:oasis:names:tc:SAML:2.0:attrname-format:uri",
+   "cert_file": "pki/mycert.pem",
+   "key_file": "pki/mykey.pem",
+   "service": {
+    "sp": {
+     "endpoints": {
+      "single_logout_service": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/slo",
+        "urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+       ]
+      ],
+      "discovery_response": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/disco",
+        "urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+       ]
+      ],
+      "assertion_consumer_service": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/acs/redirect",
+        "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+       ]
+      ]
+     }
+    }
+   },
+   "description": "Basic SP",
+   "entityid": "http://webui.samltest.fed-lab.org:8087/basic/sp.xml"
+  },
+  "rs": {
+   "entity_category": [
+    "http://refeds.org/category/research-and-scholarship"
+   ],
+   "name_form": "urn:oasis:names:tc:SAML:2.0:attrname-format:uri",
+   "cert_file": "pki/mycert.pem",
+   "key_file": "pki/mykey.pem",
+   "service": {
+    "sp": {
+     "endpoints": {
+      "single_logout_service": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/slo",
+        "urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+       ]
+      ],
+      "discovery_response": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/disco",
+        "urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+       ]
+      ],
+      "assertion_consumer_service": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/acs/redirect",
+        "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+       ],
+       [
+        "http://webui.samltest.fed-lab.org:8087/acs/post",
+        "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+       ],
+       [
+        "http://webui.samltest.fed-lab.org:8087/acs/artifact",
+        "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+       ],
+       [
+        "http://webui.samltest.fed-lab.org:8087/ecp",
+        "urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+       ]
+      ]
+     }
+    }
+   },
+   "entityid": "http://webui.samltest.fed-lab.org:8087/rs/sp.xml",
+   "description": "RS SP"
+  },
+  "required": {
+   "name_form": "urn:oasis:names:tc:SAML:2.0:attrname-format:uri",
+   "cert_file": "pki/mycert.pem",
+   "key_file": "pki/mykey.pem",
+   "service": {
+    "sp": {
+     "required_attributes": [
+      "eduPersonPrincipalName",
+      "eduPersonScopedAffiliation",
+      "mail"
+     ],
+     "name": "SP that requires attributes",
+     "endpoints": {
+      "single_logout_service": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/slo",
+        "urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+       ]
+      ],
+      "discovery_response": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/disco",
+        "urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+       ]
+      ],
+      "assertion_consumer_service": [
+       [
+        "http://webui.samltest.fed-lab.org:8087/acs/redirect",
+        "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+       ],
+       [
+        "http://webui.samltest.fed-lab.org:8087/acs/post",
+        "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+       ],
+       [
+        "http://webui.samltest.fed-lab.org:8087/acs/artifact",
+        "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+       ],
+       [
+        "http://webui.samltest.fed-lab.org:8087/ecp",
+        "urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+       ]
+      ]
+     },
+     "optional_attributes": [
+      "displayName",
+      "schacHomeOrganization"
+     ]
+    }
+   },
+   "description": "Required Attributes SP",
+   "entityid": "http://webui.samltest.fed-lab.org:8087/required/sp.xml"
+  }
+ },
+ "DO_NOT_VALIDATE_TLS": true,
+ "config_errors": [],
+ "config_infos": [],
+ "IDP_BASE": "https://testidp01.samltest.fed-lab.org",
+ "METADATA": [
+  {
+   "metadata": [
+    [
+     "http://mdfeed.samltest.fed-lab.org/split/testidp01SamltestFed-labOrg_idpShibboleth.xml"
+    ]
+   ],
+   "class": "saml2.mdstore.MetaDataExtern"
+  }
+ ]
+}
