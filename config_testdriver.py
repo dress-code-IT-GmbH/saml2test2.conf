@@ -24,7 +24,7 @@ class Config(CommonConfig):
         self.DO_NOT_VALIDATE_TLS = True     # Do not validate TLS certificates
         self.PORT = 8087
         self.METADATA = [
-            {'metadata': [('http://10.0.0.2:8080/split/testidp01SamltestFed-labOrg_idpShibboleth.xml',)],
+            {'metadata': [('https://identinetics.github.io/saml2test2.conf/split/testidp01SamltestFed-labOrg_idpShibboleth.xml',)],
              'class': 'saml2.mdstore.MetaDataExtern'}
         ]
 
