@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<md:EntitiesDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xrd="http://docs.oasis-open.org/ns/xri/xrd-1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:pyff="http://pyff.io/NS" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Name="/var/md_source/split/testidp01SamltestFedLabOrg_idpShibboleth/ed" ID="_20161003T173355Z" validUntil="2016-10-13T17:18:53Z" cacheDuration="PT5H"><ds:Signature><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ds:Reference URI="#_20161003T173355Z"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>nFucMMxKLv1fR4JoIdUSXf3/eI0=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>Q0iZy3TebcOnM7DCh0nYwxUyzlD/0BPxPXSAOsL6uW36iPuPzktl2Uti1rPMf6eZTs5ejOo8HFleESCFmBvSWjvdLaysompdAwpqhVD3Omn6e317m5tuwxkW4HZtEZrB6vwtF/lwZmVAFLmusfpibANe0DxnAqWZeVcuGrVzzoQ=</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJ
+UkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYx
+NzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1l
+YTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhv
+c3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDf
+aniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53
+h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aH
+diQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs
++ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXy
+lnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw72
+2ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature><md:EntityDescriptor entityID="https://testidp01.samltest.fed-lab.org/idp/shibboleth" cacheDuration="PT5H" validUntil="2016-10-13T17:18:53Z">
+
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0">
+
+        <md:Extensions>
+            <shibmd:Scope regexp="false">localdomain</shibmd:Scope>
+            <mdui:UIInfo>
+                <mdui:DisplayName xml:lang="en">testidp01.samltest.fed-lab.org</mdui:DisplayName>
+                <mdui:Description xml:lang="en">SAML test @fed-lab.org</mdui:Description>
+            </mdui:UIInfo>
+        </md:Extensions>
+
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                    <ds:X509Data>
+                        <ds:X509Certificate>
+MIIDZjCCAk6gAwIBAgIVAJ4qm5oTaiWxyFUPf1WYwDfr2MSfMA0GCSqGSIb3DQEB
+CwUAMCkxJzAlBgNVBAMMHnRlc3RpZHAwMS5zYW1sdGVzdC5mZWQtbGFiLm9yZzAe
+Fw0xNjA3MjIxOTEyNDNaFw0zNjA3MjIxOTEyNDNaMCkxJzAlBgNVBAMMHnRlc3Rp
+ZHAwMS5zYW1sdGVzdC5mZWQtbGFiLm9yZzCCASIwDQYJKoZIhvcNAQEBBQADggEP
+ADCCAQoCggEBAKT6zS2qJGC5xev5CSV/dg09WComFFMZWhRD/TQv1tflE/gv79CW
+ttRYtWwFEM/+/+b/ZlwfbpMvhVgazAIszkPOHXyxj7uiPYvX3iMztNODMS62Oeqz
+3qsOPYTKf218SymzmRZVATGmFQQn8jqhjF6hLdwg8Ck5tZPpANJfinnSmHmQr8sZ
+pMJPCzyNBczVGoucHlr2t2RBvG/ww+41mqCuwn8jGDpGRmF9UB4+VDgLYv3gUiee
+cRzkyc8t/DQpwExGBaq1orTfu42F9KMy4SckD8UD8F5qNlURBFDYng+Q0rIZwfw8
+RtzSQYVCWs/PbIj/e9Uxl7gi7ICczu0ZOhMCAwEAAaOBhDCBgTAdBgNVHQ4EFgQU
+r6sP3gRiPKDKYEc1MEJZKcU9kdQwYAYDVR0RBFkwV4IedGVzdGlkcDAxLnNhbWx0
+ZXN0LmZlZC1sYWIub3JnhjVodHRwczovL3Rlc3RpZHAwMS5zYW1sdGVzdC5mZWQt
+bGFiLm9yZy9pZHAvc2hpYmJvbGV0aDANBgkqhkiG9w0BAQsFAAOCAQEAeQoHyjFH
+zRh/fmu+MOFa8NcLFbsQbPErItAQqhlC+OsNR6W6fsjvdJKWrenUCuS/vQlTt5zf
+n2bKikDt/F5WGQcIuedvvHbhSACUoDaygWCaB7EXkYi/LCx0C8XI2uOK5t7FMesJ
+0QtSWDikl7+WDIdOJ6hUMwskybSU2Kfrq5t3Que7M25spwJxqi1kNC07Y2DHJvKF
+gCTCtlwreGQXF4eH6JxPhTncZRGETNXbV89TuI7vlCwrP9tP8pwxJAGVnOKnRsaV
+HnyzuMwCQul2LsV7YW8vCWisBW/zTGg/kDNULZYuIYMgwqGpD9sSz2hJEg/38HfB
+nF8UGtahNz9aNA==
+                        </ds:X509Certificate>
+                    </ds:X509Data>
+            </ds:KeyInfo>
+
+        </md:KeyDescriptor>
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                    <ds:X509Data>
+                        <ds:X509Certificate>
+MIIDZTCCAk2gAwIBAgIUXMnzjQ+pQHoienq8qzWrYYBlL0EwDQYJKoZIhvcNAQEL
+BQAwKTEnMCUGA1UEAwwedGVzdGlkcDAxLnNhbWx0ZXN0LmZlZC1sYWIub3JnMB4X
+DTE2MDcyMjE5MTI0MloXDTM2MDcyMjE5MTI0MlowKTEnMCUGA1UEAwwedGVzdGlk
+cDAxLnNhbWx0ZXN0LmZlZC1sYWIub3JnMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+MIIBCgKCAQEAgSIq6wbxylyzilfgFuaamfLEN517hbiEMrFa9O2Ha6c+pEPG1Jvg
+MtpxXaXWLlTNZnfkTzNmuIeLa+/YOpqv+9MF8uDgRMv/78KOROHtKHiSp5tin7pm
+HTzJ499WxfXibKC7ECdUwroToHzQh3QaUdaXhdFlZ2SPrVqDFNmWuG1c1OG6g50X
+7IgEwxOPXadImcUYvImgIdGzXk08Y9yKbBEJLU4P6jgsaIhSemLTw6QKFR+l3AdT
+IOOpnGd6jLBBt9M/HaHW030MOtQPWSNwTOElfBnRrlcxk9s8EDrviEB5z27zfObv
+RUDm09lQlQsbcbI0plwviPkxomjhVAqy3QIDAQABo4GEMIGBMB0GA1UdDgQWBBRi
+OxNmksaQpIu+ktYOCXb5BHFjxTBgBgNVHREEWTBXgh50ZXN0aWRwMDEuc2FtbHRl
+c3QuZmVkLWxhYi5vcmeGNWh0dHBzOi8vdGVzdGlkcDAxLnNhbWx0ZXN0LmZlZC1s
+YWIub3JnL2lkcC9zaGliYm9sZXRoMA0GCSqGSIb3DQEBCwUAA4IBAQCAZCgE/heI
+SythEbQtPaTHO+gCxZfkLOh0oZtSqp260n/rTVrEprlCQME6cLYLnJwY9GBv9AMg
+o9yENvEOUjME5qJaspKDS7QovhapSsu4kZQYwMnxSPUC95TCBfH3N5eBe5nGmJ0k
+B0cNNLwnlh4dHAMYp5ZSrPJ7at8NbiXMK+zYjj0VUkSGJCY/vX0MeFeIKI59Hqox
+U/TJffLnRinTlIlBvkzA3qwQTW3+AdlFy55XeFu21zKYOx1zkNH/MgaXvn2qj361
+hPe5Y10eTlFL85Ivc4pSo5xGLuLMNtD/NpXrn2ywDKBVQlP19O4+UyaC5YcEVahc
+3ZA5Ohqb7XuK
+                        </ds:X509Certificate>
+                    </ds:X509Data>
+            </ds:KeyInfo>
+
+        </md:KeyDescriptor>
+        <md:KeyDescriptor use="encryption">
+            <ds:KeyInfo>
+                    <ds:X509Data>
+                        <ds:X509Certificate>
+MIIDZjCCAk6gAwIBAgIVAPCj15mg63h3wTiPMhvxcyGSzbepMA0GCSqGSIb3DQEB
+CwUAMCkxJzAlBgNVBAMMHnRlc3RpZHAwMS5zYW1sdGVzdC5mZWQtbGFiLm9yZzAe
+Fw0xNjA3MjIxOTEyNDJaFw0zNjA3MjIxOTEyNDJaMCkxJzAlBgNVBAMMHnRlc3Rp
+ZHAwMS5zYW1sdGVzdC5mZWQtbGFiLm9yZzCCASIwDQYJKoZIhvcNAQEBBQADggEP
+ADCCAQoCggEBAI2LLzsqYX+pye81SlRn5uo/ih/msEdchg4W6uB3J9gp0na4uGPj
+sY5Ezg8JBHNVfoe/Go8bzqoj+ze5Ps2Xz0Kxq75xKdSYoKtPVHl6q6Uo71GGGeE1
+0PMc75EIU2eq7q18CfyUiyVCAjUQjabm19ZiF8RoVqBfX4fhsOfgCS2eAm4+tXGe
+lCFnfViMrOYu8zCkBblHTa/R8IdsgOyacOftpwiz4kCrwFehTSVXcnNsBIC6bxW6
+4rfn5F3j0vIBfG2V3EqQdru8POfYSJw/j9RpEgM0HFemJDXuBsbajc6DBsUFI7aO
+I2dTxgzZ1p+pdEevI4VmrRTBf58X3KClmMkCAwEAAaOBhDCBgTAdBgNVHQ4EFgQU
+vNBxWg6SCx5HqxSE/nN+7muEPmkwYAYDVR0RBFkwV4IedGVzdGlkcDAxLnNhbWx0
+ZXN0LmZlZC1sYWIub3JnhjVodHRwczovL3Rlc3RpZHAwMS5zYW1sdGVzdC5mZWQt
+bGFiLm9yZy9pZHAvc2hpYmJvbGV0aDANBgkqhkiG9w0BAQsFAAOCAQEAX6LvU3bj
+L5/lSx621QEor34SuTJiaLzLQR3yTnCxP6vzKZiB5eT8BcpkF4Bg+0R7HnfVLJxn
+HI4TY7kva478OPD2Y40jiifZlSu24JlUxiVKxLBe96cbvqSj6eepXd7bHMfS4tFz
+NGMXmB5OyQJEtHsTmQiizbU94URuE0949k4jFrUERbJaOWRca8Q3y7oNzUOqgS62
+Hgh+Etyql6z7hkuujZvIdnPqnfBZ7X3BWXyH7tJAmdR9n9XQ5EwKvje+QYYeJkG7
+6MlcrDdTs4LjfusYhX0MPqaXKJKzwP1bwHf/bppTFN9ghum+sn/q3dmL38Is0FP3
+PupRgxJVdYCveQ==
+                        </ds:X509Certificate>
+                    </ds:X509Data>
+            </ds:KeyInfo>
+
+        </md:KeyDescriptor>
+
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://testidp01.samltest.fed-lab.org/idp/profile/SAML2/Redirect/SLO"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://testidp01.samltest.fed-lab.org/idp/profile/SAML2/POST/SLO"/>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://testidp01.samltest.fed-lab.org/idp/profile/SAML2/POST/SSO"/>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://testidp01.samltest.fed-lab.org/idp/profile/SAML2/Redirect/SSO"/>
+
+    </md:IDPSSODescriptor>
+
+</md:EntityDescriptor></md:EntitiesDescriptor>

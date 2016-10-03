@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<md:EntitiesDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xrd="http://docs.oasis-open.org/ns/xri/xrd-1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:pyff="http://pyff.io/NS" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Name="/var/md_source/split/testsp01SamltestFedLabOrg_spXml/ed" ID="_20161003T173354Z" validUntil="2016-10-13T17:18:53Z" cacheDuration="PT5H"><ds:Signature><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ds:Reference URI="#_20161003T173354Z"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>0u5yKPp4YtbKzc9WoTGzSk3jbIA=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>BP0EeSnZkN0cXoADtpr5u57r2dOCYHuRRgCj12VVRKsZpryWVCBhv+/bBE7VBTsYL1fzU/2wT7dhF8+02AqdYNiXsJXksl0+4TEKodWjJGvq8nVXeSS/hSppzvcojQE3cHHDSC19kvHmSrPWFgC/kZ8+fJo07P8DxAC8CjJLONE=</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJ
+UkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYx
+NzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1l
+YTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhv
+c3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDf
+aniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53
+h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aH
+diQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs
++ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXy
+lnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw72
+2ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature><md:EntityDescriptor entityID="https://testsp01.samltest.fed-lab.org/sp.xml" cacheDuration="PT5H" validUntil="2016-10-13T17:18:53Z">
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol">
+    <md:KeyDescriptor>
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <ds:X509Certificate>
+MIIC3zCCAcegAwIBAgIJALW53SZnWKyxMA0GCSqGSIb3DQEBBQUAMBMxETAPBgNV
+BAMTCDIxc2hpYnNwMB4XDTE2MDcyNTE1NDkyNloXDTI2MDcyMzE1NDkyNlowEzER
+MA8GA1UEAxMIMjFzaGlic3AwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+AQC+jENTVdSO6maLzpsGo9fd+ALKfNmNI2TQOd1GZse1xKqKQ88O1eQkEJue4oim
+F+3PfJuT4hmJ4Gbpl0Vw34H5ZoKSrhXLijeGAOXrdhw9u8IZ0U6hsACEBKExMM/3
+aoQfStnhpHLccAJI2LzqyL9Ocd5IJ8yv9xJVjwjmD1mRva/Gu5hznMpgFREkh0yE
+WtHhgx6SI6cC58XnBZIqjKZsY1Tc1kLqOlGBNQtD44z9TsXKNkNTONR91uP3ZxuM
+AtwuFHBOHwxTDjTfMtEV3AHEH+IL9USNrbCQvPlKlGnQ1UhBt+/L4/zEf/xlz4F9
+KxIODEGYOtRLXt3qtw40Kg5bAgMBAAGjNjA0MBMGA1UdEQQMMAqCCDIxc2hpYnNw
+MB0GA1UdDgQWBBQoufG6Ubzqh1uxZcZDnaLVjm53jTANBgkqhkiG9w0BAQUFAAOC
+AQEAkX1RybdB3dnfY9w+IciqWmAD+htxqdpy19C4gryCN3hX2C1hmQSIw62WChAb
+dDvwpCpxlK6SxmwkRiNzm+SQ2LwEiBdDufIF6N2tewRUIDTP08PHl94HCHsihyw3
+8Hz7sYludFRsFifKrHwnCnAWg8g3eUG2OQqO6GoJo0X2WB6Io1IHawHicfF4weEm
+ItgY6HIG7+nJskqa938jdioACEmFwCdpL38JfhIvajh3+zk8bYZuOhkdm8UDwFDB
+eKh6iqOmYEuVDs0YJ1VSOPRJrqx97H5kYycz1Bur+vQJih1EHVmTaucup/XJOeSG
+/tCQV31UdU+FgK1g9X4+T7JsRA==
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://testsp01.samltest.fed-lab.org/Shibboleth.sso/SAML2/POST" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://testsp01.samltest.fed-lab.org/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://testsp01.samltest.fed-lab.org/Shibboleth.sso/SAML2/ECP" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://testsp01.samltest.fed-lab.org/Shibboleth.sso/SAML/POST" index="4"/>
+  </md:SPSSODescriptor>
+</md:EntityDescriptor></md:EntitiesDescriptor>

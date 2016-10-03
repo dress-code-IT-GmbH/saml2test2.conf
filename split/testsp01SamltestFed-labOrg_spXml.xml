@@ -1,0 +1,33 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
+    entityID="https://testsp01.samltest.fed-lab.org/sp.xml">
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol">
+    <md:KeyDescriptor>
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <ds:X509Certificate>
+MIIC3zCCAcegAwIBAgIJALW53SZnWKyxMA0GCSqGSIb3DQEBBQUAMBMxETAPBgNV
+BAMTCDIxc2hpYnNwMB4XDTE2MDcyNTE1NDkyNloXDTI2MDcyMzE1NDkyNlowEzER
+MA8GA1UEAxMIMjFzaGlic3AwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+AQC+jENTVdSO6maLzpsGo9fd+ALKfNmNI2TQOd1GZse1xKqKQ88O1eQkEJue4oim
+F+3PfJuT4hmJ4Gbpl0Vw34H5ZoKSrhXLijeGAOXrdhw9u8IZ0U6hsACEBKExMM/3
+aoQfStnhpHLccAJI2LzqyL9Ocd5IJ8yv9xJVjwjmD1mRva/Gu5hznMpgFREkh0yE
+WtHhgx6SI6cC58XnBZIqjKZsY1Tc1kLqOlGBNQtD44z9TsXKNkNTONR91uP3ZxuM
+AtwuFHBOHwxTDjTfMtEV3AHEH+IL9USNrbCQvPlKlGnQ1UhBt+/L4/zEf/xlz4F9
+KxIODEGYOtRLXt3qtw40Kg5bAgMBAAGjNjA0MBMGA1UdEQQMMAqCCDIxc2hpYnNw
+MB0GA1UdDgQWBBQoufG6Ubzqh1uxZcZDnaLVjm53jTANBgkqhkiG9w0BAQUFAAOC
+AQEAkX1RybdB3dnfY9w+IciqWmAD+htxqdpy19C4gryCN3hX2C1hmQSIw62WChAb
+dDvwpCpxlK6SxmwkRiNzm+SQ2LwEiBdDufIF6N2tewRUIDTP08PHl94HCHsihyw3
+8Hz7sYludFRsFifKrHwnCnAWg8g3eUG2OQqO6GoJo0X2WB6Io1IHawHicfF4weEm
+ItgY6HIG7+nJskqa938jdioACEmFwCdpL38JfhIvajh3+zk8bYZuOhkdm8UDwFDB
+eKh6iqOmYEuVDs0YJ1VSOPRJrqx97H5kYycz1Bur+vQJih1EHVmTaucup/XJOeSG
+/tCQV31UdU+FgK1g9X4+T7JsRA==
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://testsp01.samltest.fed-lab.org/Shibboleth.sso/SAML2/POST" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://testsp01.samltest.fed-lab.org/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://testsp01.samltest.fed-lab.org/Shibboleth.sso/SAML2/ECP" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://testsp01.samltest.fed-lab.org/Shibboleth.sso/SAML/POST" index="4"/>
+  </md:SPSSODescriptor>
+</md:EntityDescriptor>
